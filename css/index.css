@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  padding: 2rem 5%;
+}
+
+h1 {
+  font-weight: 700;
+  color: #fff;
+  font-size: 2.3rem;
+}
+
+.navbar__links {
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+  color: #fff;
+  text-decoration-line: none;
+}
+.navbar__links:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.menulan {
+  display: flex;
+  position: absolute;
+  top: 18px;
+  right: 100px;
+  color: #fff;
+}
+.menulan h3 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 2rem 5%;
+  min-height: 80vh;
+  background: url(../assets/plane.jpg);
+  background-size: cover;
+}
+
+.hero__content {
+  max-width: 50rem;
+}
+
+.hero__title {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 400;
+}
+
+.hero__text {
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 1rem 0;
+  line-height: 1.5;
+}
+
+.hero__button {
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 30px;
+  padding: 1rem 5rem;
+  color: #fff;
+  background-color: #FB3640;
+  text-decoration-line: none;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  padding: 0 5%;
+}
+
+.container__cards {
+  display: flex;
+  gap: 2rem;
+}
+
+.container__card {
+  width: 233px;
+  height: 207px;
+  display: grid;
+  grid-template-areas: "stack";
+  overflow: hidden;
+  border: 1px solid #0A2463;
+  border-radius: 16px;
+}
+
+.container__card img, .container__card figcaption {
+  grid-area: stack;
+}
+
+.container__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container__card figcaption {
+  background-color: rgba(0, 0, 0, 0.6784313725);
+  transform: translateY(calc(100% - 5rem));
+  color: #fff;
+  text-align: center;
+}
+
+.container__card figcaption p {
+  padding: 1rem 5rem 0 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.container__card figcaption h3 {
+  padding: 1rem 0 0 5rem;
+  font-size: 1.2rem;
+}
+
+.offer__title {
+  position: relative;
+  color: #247BA0;
+  padding: 4rem 5%;
+  font-weight: 400;
+}
+
+.offer__title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 150px;
+  width: 85%;
+  height: 1px;
+  background-color: black;
+}
+
+.container__text {
+  text-align: center;
+  color: #605F5E;
+  font-size: 1rem;
+  margin: 5rem 19%;
+  font-weight: 600;
+}
+
+.container__line {
+  content: "";
+  position: absolute;
+  width: 19%;
+  margin: 4rem 19%;
+  background-color: #605F5E;
+}
+
+.container__menu {
+  margin-left: 10%;
+  width: 23%;
+}
+
+.menu {
+  background-color: #fff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.menu__title h2 {
+  font-weight: 300;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.menu__item {
+  border-bottom: 1px solid rgba(96, 95, 94, 0.2392156863);
+  display: flex;
+  align-items: center;
+}
+
+.menu__itemEnd {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item h4 {
+  font-weight: 300;
+  padding: 1.2rem 5%;
+}
+
+.menu__itemEnd h4 {
+  font-weight: 300;
+  padding: 1.1rem 5%;
+}
+
+.menu__arrow:before {
+  content: "";
+  display: flex;
+  margin-left: 20px;
+  width: 0;
+  height: 0;
+  border-left: 12.8px solid #247BA0;
+  border-top: 6.25px solid transparent;
+  border-bottom: 6.25px solid transparent;
+}
+
+.menu__arrow:before {
+  content: "";
+  display: flex;
+  margin-left: 20px;
+  width: 0;
+  height: 0;
+  border-left: 12.5px solid #247BA0;
+  border-top: 6.25px solid transparent;
+  border-bottom: 6.25px solid transparent;
+}
+
+.footer {
+  background-color: #0A2463;
+  padding: 70px 0;
+  margin-top: 10%;
+}
+
+.footer__container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.footer__containerdos {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.footer__socialIcons {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.footer__socialIcons img {
+  padding: 5px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+  width: 10%;
+}
+
+.footer__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer__col {
+  width: 25%;
+  padding: 2rem 15px;
+}
+
+.footer__title {
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+}
+
+.footer__col h4 {
+  font-size: 18px;
+  color: #FB3640;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  margin-bottom: 12px;
+  font-weight: 300;
+  position: relative;
+}
+
+.footer__about {
+  font-size: 18px;
+  color: #FB3640;
+  padding-top: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+.footer__col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer__col ul li a {
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  display: block;
+}
+
+.footer__col p {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  display: block;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+/*# sourceMappingURL=index.css.map */
