@@ -44,3 +44,49 @@ h1 {
     font-size: 1rem;
   }
 }
+
+
+//responsive header
+
+@media (max-width:480px) {
+
+  .header__title {
+    position: absolute;
+    top: 1rem;
+   
+
+  }
+
+  .navbar {
+    margin: 3rem auto;
+  }
+
+  .menulan {
+    top: 1.5rem;
+  }
+}
+
+@media (max-width:640px){
+  .header__title {
+    position: absolute;
+    top: 1rem;
+   
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  .navbar {
+    font-size: 2rem;
+    margin: 3rem auto;
+  }
+
+  .navbar__links{
+    font-size: 1.2rem;
+  }
+
+  .menulan {
+    top: 1.5rem;
+  }
+}

@@ -1,96 +1,130 @@
-.container{
-    display: flex;
-    padding: 0 5%;
-    // display: grid;
-    // grid-template-columns: 22% 22% 22%;
-    // background-color: blueviolet;
+.container {
+  display: flex;
+  padding: 0 5%;
+  // display: grid;
+  // grid-template-columns: 22% 22% 22%;
+  // background-color: blueviolet;
 }
 
-.container__cards{
+.container__cards {
   // background-color: crimson;
-  display:flex;
+  display: flex;
   gap: 2rem;
 
 }
 
-.container__card{
-    width: 233px;
-    height: 207px;
-    display: grid;
-    grid-template-areas: "stack";
-    overflow: hidden;
-    border: 1px solid $primaryColor; 
-    border-radius: 16px;
-    
+.container__card {
+  width: 233px;
+  height: 207px;
+  display: grid;
+  grid-template-areas: "stack";
+  overflow: hidden;
+  border: 1px solid $primaryColor;
+  border-radius: 16px;
+
 }
 
-.container__card img , .container__card figcaption{
-    grid-area:stack;
+.container__card img,
+.container__card figcaption {
+  grid-area: stack;
 }
 
-.container__card img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.container__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.container__card figcaption{
-    background-color: #000000AD;
-    transform: translateY(calc(100% - 5rem));
-    // transition: transform 0.6s;
-    color: $color-text;
-    text-align: center;
+.container__card figcaption {
+  background-color: #000000AD;
+  transform: translateY(calc(100% - 5rem));
+  // transition: transform 0.6s;
+  color: $color-text;
+  text-align: center;
 }
 
-.container__card figcaption p{
-    padding: 1rem 5rem 0 0;
-    font-size: 1rem;
-    font-weight: 300;
-    
-    
+.container__card figcaption p {
+  padding: 1rem 5rem 0 0;
+  font-size: 1rem;
+  font-weight: 300;
+
+
 }
-.container__card figcaption h3{
-    padding: 1rem 0 0 5rem;
-    font-size: 1.2rem;
+
+.container__card figcaption h3 {
+  padding: 1rem 0 0 5rem;
+  font-size: 1.2rem;
 }
 
 
 .offer__title {
-    position: relative;
-    color: #247BA0;
-    padding: 4rem 5%;
-    font-weight: 400;
+  position: relative;
+  color: #247BA0;
+  padding: 4rem 5%;
+  font-weight: 400;
+}
+
+.offer__title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 150px;
+  width: 85%;
+  height: 1px;
+  background-color: black;
+}
+
+
+.container__text {
+  text-align: center;
+  color: #605F5E;
+  font-size: 1rem;
+  margin: 5rem 19%;
+  font-weight: 600;
+}
+
+.container__line {
+  content: "";
+  position: absolute;
+  width: 19%;
+  margin: 4rem 19%;
+  background-color: #605F5E;
+}
+
+
+//responsive travel cards
+
+@media (max-width:480px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container__cards {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   .offer__title::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 150px;
-    width: 85%;
-    height: 1px;
-    background-color: black;
+    width: 60%;
+
+  }
+}
+
+@media (max-width:640px){
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container__cards {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
   }
 
+  .offer__title::after {
+    width: 60%;
 
-  .container__text{
-    text-align: center;
-    color: #605F5E;
-    font-size: 1rem;
-    margin:5rem 19% ;
-    font-weight: 600;
   }
-
-  .container__line{
-    content: "";
-    position: absolute;
-    width: 19%;
-    margin:4rem 19%;
-    background-color: #605F5E;
-  }
-
-//   .container__input{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//   }
+}

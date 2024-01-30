@@ -3,7 +3,7 @@
     // margin: auto;
     margin-left: 10%;
     width: 23%;
-  }
+}
 
 .menu {
     background-color: #fff;
@@ -62,11 +62,38 @@
 .menu__arrow:before{
     content: "";
     display: flex;
-   margin-left: 20px;
+    margin-left: 20px;
     width: 0; 
     height: 0; 
     border-left: 12.5px solid #247BA0;
     border-top: 6.25px solid transparent;
     border-bottom: 6.25px solid transparent; 
 }
+
+
+@media (max-width:480px){
+
+       //responsive menu lateral
+
+       .container__menu {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: auto;
+    }
+
+}
+     
+
+@media (max-width:640px){
+    .container__menu {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: auto;
+    } 
+}
+
 
