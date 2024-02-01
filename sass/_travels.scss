@@ -57,23 +57,48 @@
 }
 
 
-.offer__title {
-  position: relative;
-  color: #247BA0;
-  padding: 4rem 5%;
-  font-weight: 400;
-}
+// .offer__title {
+//   position: relative;
+//   color: #247BA0;
+//   padding: 4rem 5%;
+//   font-weight: 400;
+// }
 
-.offer__title::after {
+// .offer__title::after {
+//   content: "";
+//   position: absolute;
+//   top: 50%;
+//   left: 150px;
+//   width: 85%;
+//   height: 1px;
+//   background-color: black;
+// }
+
+
+//CONTAINER OFFER
+.main__title {
+  position: relative;
+  height: 48px;
+  font-weight: 400;
+  margin: 60px 65px;
+}
+.offers{
+  display: inline-block;
+  color:#247BA0 ;
+  font-weight: 400;
+  z-index: 1;
+  position: relative;
+}
+.main__title::after {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 150px;
-  width: 85%;
+  width: 86%;
   height: 1px;
   background-color: black;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0px 27px;
 }
-
 
 .container__text {
   text-align: center;
@@ -93,6 +118,86 @@
 
 
 //responsive travel cards
+@media (max-width:1200px){
+  .container {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .container__cards {
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    
+  }
+
+  .offer__title::after {
+    width: 60%;
+
+  }
+}
+
+@media (max-width:992px){
+  .container {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .container__cards {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    
+  }
+
+  .offer__title::after {
+    width: 60%;
+
+  }
+}
+
+@media (max-width:768px){
+  .container {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .container__cards {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    
+  }
+
+  .offer__title::after {
+    width: 60%;
+
+  }
+}
+
+@media (max-width:640px){
+  .container {
+    flex-direction: column ;
+    justify-content: center;
+  }
+  .container__cards {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .offer__title::after {
+    width: 60%;
+
+  }
+
+  .offers{
+    font-size: 2.3rem;
+  }
+
+
+  .main__title::after{
+    width: 80%;
+  }
+}
 
 @media (max-width:480px) {
   .container {
@@ -108,23 +213,14 @@
 
   .offer__title::after {
     width: 60%;
+  }
 
+  .offers{
+    font-size: 2rem;
+  }
+
+  .main__title::after{
+    width: 70%;
   }
 }
 
-@media (max-width:640px){
-  .container {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .container__cards {
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-  }
-
-  .offer__title::after {
-    width: 60%;
-
-  }
-}

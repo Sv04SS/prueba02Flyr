@@ -1,15 +1,17 @@
-.container__menu{
+.container__menu {
     // background-color: chartreuse;
     // margin: auto;
     margin-left: 10%;
-    width: 23%;
+
 }
 
 .menu {
     background-color: #fff;
-    box-shadow:2px 2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
-    
+    width: 233px;
+    height: 350px;
+
 }
 
 
@@ -23,18 +25,18 @@
 .menu__item {
     border-bottom: 1px solid #605f5e3d;
     display: flex;
-    align-items:center;
+    align-items: center;
 }
 
 .menu__itemEnd {
     display: flex;
-    align-items:center;
+    align-items: center;
 }
 
 .menu__item h4 {
     font-weight: 300;
     padding: 1.2rem 5%;
-    
+
 
 }
 
@@ -42,7 +44,7 @@
 .menu__itemEnd h4 {
     font-weight: 300;
     padding: 1.1rem 5%;
-    
+
 }
 
 
@@ -50,32 +52,68 @@
     content: "";
     display: flex;
     margin-left: 20px;
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 12.8px solid #247BA0;
     border-top: 6.25px solid transparent;
-    border-bottom: 6.25px solid transparent; 
+    border-bottom: 6.25px solid transparent;
 
 }
 
 //recordar encontrar solucion para quitar esto y no repetir codigo
-.menu__arrow:before{
+.menu__arrow:before {
     content: "";
     display: flex;
     margin-left: 20px;
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 12.5px solid #247BA0;
     border-top: 6.25px solid transparent;
-    border-bottom: 6.25px solid transparent; 
+    border-bottom: 6.25px solid transparent;
+}
+
+//responsive menu lateral
+
+@media (max-width:1200px){
+}
+
+@media (max-width:992px){
+    
+    .container__menu {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: auto;
+    }
+}
+
+@media (max-width:768px){
+    
+    .container__menu {
+        padding-top: 0.2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: auto;
+    }
+}
+
+@media (max-width:640px) {
+
+    .container__menu {
+        padding-top: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: auto;
+    }
 }
 
 
-@media (max-width:480px){
-
-       //responsive menu lateral
-
-       .container__menu {
+@media (max-width:480px) {
+    
+    .container__menu {
         padding-top: 2rem;
         display: flex;
         justify-content: center;
@@ -84,16 +122,3 @@
     }
 
 }
-     
-
-@media (max-width:640px){
-    .container__menu {
-        padding-top: 2rem;
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
-        width: auto;
-    } 
-}
-
-

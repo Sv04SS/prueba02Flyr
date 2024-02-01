@@ -33,44 +33,53 @@ h1 {
 
 .menulan {
   display: flex;
-  position: absolute;
   top: 18px;
-  right: 100px;
+  margin-right: 6.2rem;
+  right: 0;
+  position: absolute;
   color: $color-text;
 
 
   h3 {
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 18px;
   }
 }
 
 
 //responsive header
 
-@media (max-width:480px) {
+// @media (max-width:1200px){
+  
+// }
 
-  .header__title {
-    position: absolute;
-    top: 1rem;
-   
-
-  }
-
-  .navbar {
-    margin: 3rem auto;
-  }
+@media (max-width:992px){
 
   .menulan {
-    top: 1.5rem;
+    top:20px;
+    right: 0;
+    margin-right: 4.5rem;
   }
 }
+
+
+@media (max-width:768px){
+
+  .menulan {
+    top:20px;
+    right: 0;
+    margin-right: 4.5rem;
+  }
+}
+
 
 @media (max-width:640px){
   .header__title {
     position: absolute;
     top: 1rem;
-   
+    margin: auto;
+    width: 87%;
+    padding: 10px; 
   }
 
   h1{
@@ -87,6 +96,42 @@ h1 {
   }
 
   .menulan {
-    top: 1.5rem;
+    top:35px;
+    right: 0;
   }
 }
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .header__title {
+    margin: auto;
+    width: 87%;
+    padding: 10px;
+   
+  }
+  .navbar {
+    margin: 3rem auto;
+  }
+
+  .menulan {
+    top:35px;
+    margin-right: 4rem;
+    right: 0px;
+  }
+
+
+    .navbar__links{
+    font-size: 1rem;
+   
+
+  }
+
+}
+
+
+
+
+
+
+
